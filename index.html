@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online delivery website</title>
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mooli&family=Sawarabi+Gothic&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Mooli&family=Sawarabi+Gothic&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #logo {
+            margin: 10px 34px;
+        }
+
+        #logo img {
+            height: 60px;
+            margin: 3px 6px;
+        }
+
+        #navbar {
+            position: relative;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        #navbar ul {
+            display: flex;
+            font-family: 'Acme', sans-serif;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 18px;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 23px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home::before {
+            content: "";
+            background: url(https://i1.wp.com/itsawheatlesslife.com/wp-content/uploads/2017/02/Food-background.jpg?w=3000&ssl=1) no-repeat center center/cover;
+            position: absolute;
+            height: 80%;
+            width: 100%;
+            top: 0px;
+            z-index: -1;
+            opacity: 0.89
+        }
+
+        #home h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Sawarabi Gothic', sans-serif;
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Bree Serif', serif;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Sawarabi Gothic', sans-serif;
+        }
+
+        .h1primary {
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+
+        .btn {
+            background-color: brown;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            padding: 6px;
+            margin: 7px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .services-container h1 {
+            font-family: 'Bree Serif', serif;
+            font-size: 34px;
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 2px solid red;
+            padding: 34px;
+            height: 207px;
+            margin: 3px 6px;
+            border-radius: 28px;
+            background-color: rgb(236 230 230);
+        }
+
+        #services .box img {
+            height: 100px;
+            margin: auto;
+            display: block;
+            background-color: rgb(236 230 230);
+        }
+
+        h2 {
+            font-family: 'Bree Serif', serif;
+            text-align: center;
+            padding: 7px;
+        }
+
+        #services .box p {
+            font-family: 'Bree Serif', serif;
+        }
+
+        #clientsection {
+            height: 344px;
+        }
+
+        #clientsection h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 46px;
+            font-family: 'Bree Serif', serif;
+            color: black;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clients img {
+            height: 85px;
+        }
+
+        .clientitem {
+            padding: 25px;
+        }
+
+        #clientsection {
+            position: relative;
+        }
+
+        #clientsection::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 90%;
+            padding: 3px 6px;
+            z-index: -1;
+            opacity: 0.7;
+            background: url(https://tse3.mm.bing.net/th?id=OIP.5bj5AaOFrzU-QI8z-z8AjAHaDQ&pid=Api&P=0&h=220) no-repeat center center/cover;
+            background-color: rgb(92, 29, 29);
+        }
+
+        /* Contact Section */
+        #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url(https://tse1.explicit.bing.net/th?id=OIP.CIsrLWuHFyqKQo4Cm2JYhgHaB-&pid=Api&P=0&h=220) no-repeat center center/cover;
+            background-color: rgb(212, 193, 193);
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Bree Serif', serif;
+            padding: 6px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            /* font-size: 1.1rem; */
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            /* font-size: 1.3rem; */
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 9px 20px;
+            text-align: center;
+        }
+        .btn2{
+            background-color: rgb(17, 15, 15);
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            padding: 6px;
+            /* margin: 7px; */
+            font-size: 15px;
+            cursor: pointer;
+            display: block;
+            /* text-align: center; */
+            width: 100px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://i.pinimg.com/564x/5c/92/75/5c92751b9ded1be8314cd1317227256d.jpg" alt="this is my logo">
+        </div>
+        <ul class="listitems">
+            <li><a href="home">Home</a></li>
+            <li><a href="Services">Services</a></li>
+            <li><a href="About us">About us</a></li>
+            <li><a href="Contact us">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h1primary">welcome to myonlinemeal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos totam velit </p>
+        <p>Lorem ipsum dolor sit amet, consectetur </p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services-container">
+        <h1 class="h1primarycenter">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://i.pinimg.com/564x/8a/b6/21/8ab62151ecd9bcd053d64390005e8d19.jpg" alt="">
+                <h2 class="secondarycenter">Food catering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos praesentium sed, debitis ea
+                    placeat impedit tempora optio. Deserunt, maxime accusamus! Necessitatibus, ad fugiat quibusdam </p>
+            </div>
+            <div class="box">
+                <img src="https://i.pinimg.com/564x/a4/67/63/a4676309aaced1e847fe7df303aca9ca.jpg" alt="">
+                <h2 class="secondarycenter">Bulk Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos praesentium sed, debitis ea
+                    placeat impedit tempora optio. Deserunt, maxime accusamus! Necessitatibus, ad fugiat quibusdam </p>
+            </div>
+            <div class="box">
+                <img src="https://i.pinimg.com/564x/39/d7/4b/39d74b3aff552c18810fe8a2f0b05b1f.jpg" alt="">
+                <h2 class="secondarycenter">Food Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos praesentium sed, debitis ea
+                    placeat impedit tempora optio. Deserunt, maxime accusamus! Necessitatibus, ad fugiat quibusdam </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientsection">
+        <h1 class="clientheading">Our clients</h1>
+        <div id="clients">
+            <div class="clientitem">
+                <img src="https://i.pinimg.com/564x/8d/f5/e7/8df5e76136dcba44841002494e01e050.jpg" alt="">
+            </div>
+            <div class="clientitem">
+                <img src="https://i.pinimg.com/564x/84/95/cf/8495cf770fdcb80355dc940930c0d9a8.jpg" alt="">
+            </div>
+            <!-- <div class="clientitem">
+                <img src="https://i.pinimg.com/564x/d0/55/06/d055065301583ef1885add1d9c03581a.jpg.jpg" alt="">
+            </div> -->
+            <div class="clientitem">
+                <img src="https://i.pinimg.com/564x/d0/55/06/d055065301583ef1885add1d9c03581a.jpg" alt="">
+            </div>
+            <div class="clientitem">
+                <img src="https://i.pinimg.com/564x/6c/2f/d7/6c2fd76522629d72010da00d1fc893ce.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="contact us">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn2">submit</button>
+            </form>
+        </div>
+    </section>
+    <footer class="center">
+        copyright &copy; www.myonlinemeal.com. All rights reserved!
+    </footer>
+</body>
+
+</html>
